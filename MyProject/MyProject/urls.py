@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls', namespace='news')),
 
+    url(r'^$', 'MyProject.views.home', name='home'),
+
 ]
